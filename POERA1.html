@@ -1,4 +1,4 @@
-        <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 	<title>POERA</title>
@@ -21,9 +21,9 @@
 			{
 				position: relative;
 				top: 100px;
-                 background-image: url("https://68.media.tumblr.com/fc89e8a7990df37abddef30f34c858d2/tumblr_nczdxhDPhm1tceypqo1_1280.jpg") !important
-            background-size: cover;
-            background-repeat: no-repeat;
+                /*background-image: url("https://68.media.tumblr.com/fc89e8a7990df37abddef30f34c858d2/tumblr_nczdxhDPhm1tceypqo1_1280.jpg") !important*/
+                /*background-size: cover;*/
+                /*background-repeat: no-repeat;*/
 			}
         #tree
         {
@@ -37,23 +37,9 @@
 </head>
 <body id="tree">
 	<script type="text/javascript" src="nav_bar.js"></script>
-    
-        
-        <div class="ui basic icon top fixed menu">
-            <a id="toggle" class="item">
-            <i class="sidebar icon"></i>
-            </a>
-        </div>
     <div class="pusher" id="tree" >
         <div id="whole" >
             <div class="ui container"></div>
-        
-            <script>
-                $('#toggle').click(function(){
-                $('.ui.sidebar').sidebar('toggle');
-                });
-            </script>
-
             <h1 align="center">POERA</h1>
             <p align="center">I have to write something over here but don't know what to.<br/>Waiting for Adithya to tell me the content</p>
             <div class="ui container" align="center">
@@ -66,11 +52,11 @@
     	                   <input type="Password" name="Password" placeholder="Password">
                         </div>
                         <div id="submit" align="center"> 
-                            <button class="ui blue button">SUBMIT</button>
+                            <button class="ui secondary button">SUBMIT</button>
                         </div>
                         <div id="other" align="center">
-                            <button class="ui basic blue button">Signup</button>
-                            <button class="ui basic blue button">Have a look</button>
+                            <button class="ui button" onclick="window.location.href='poerasignup.html'">Signup</button>
+                            <button class="ui button" onclick="">Have a look</button>
                         </div>
                     </div>
                 </div>

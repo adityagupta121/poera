@@ -39,11 +39,14 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/semantic.min.js"></script>
     <script type="text/javascript">
     window.onload=timeout;
+
     function timeout()
     {
+        $("#menu").hide();
         window.setTimeout(function() {
         $("#splash").remove();
         $("#postsplash").fadeIn("slow");
+        $("#menu").show();
     
     }, 3000);
 
@@ -63,28 +66,16 @@
     </div>
 
     <div id="postsplash" style="display: none;">
-        <div class="ui container" align="center">
-        <div class="ui form">
         <script type="text/javascript" src="nav_bar.js"></script>
-        <button class="basic blue ui button" id="home" style="position: relative;"><i class="home icon"></i></button>
-        <div class="ui basic icon top fixed menu">
-            <a id="toggle" class="item">
-            <i class="sidebar icon"></i>
-            </a>
-        </div>
-        <div class="pusher">
-            <div class="ui container"></div>
-        </div>
-        <script>
-            $('#toggle').click(function(){
-            $('.ui.sidebar').sidebar('toggle');
-            });
-
-        </script>
-     
-         <h1 align="center">POERA</h1>
-  
-         </div>
+        <div class="ui container" align="center">
+            <div class="ui form">
+            <button class="basic blue ui button" id="home"><i class="home icon"></i></button>
+            <div class="pusher">
+                <div class="ui container"></div>
+            </div>
+            
+            <h1 align="center">POERA</h1>  
+            </div>
         </div>
     </div>
 </body>
