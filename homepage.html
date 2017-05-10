@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>POERA</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/semantic.min.css">
+    <style type="text/css">
+    
+    #whole
+            {
+                position:relative;
+                top:100px;
+            }
+    #home
+    {
+     /*   position: relative;
+        margin: auto;
+        display: block;
+    */
+        margin-top: 50px;
+    }
+                   
+    #splash
+    {
+        background-image: url("poeralogo.jpg");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 100%;
+        height: 100%;
+    }
+    /*#postsplash
+    {
+        background-color: #ADD8E6;
+    }
+   */
+
+    </style>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/semantic.min.js"></script>
+    <script type="text/javascript">
+    window.onload=timeout;
+    function timeout()
+    {
+        window.setTimeout(function() {
+        $("#splash").remove();
+        $("#postsplash").fadeIn("slow");
+    
+    }, 3000);
+
+    }
+    
+    </script>
+
+</head>
+<body onload="timeout()" >
+
+    <div class="ui container" id="splash" >
+        <div class="ui text container">
+        <h1 class="ui inverted header" align="center">
+            Welcome to Peora
+        </h1>
+        </div>
+    </div>
+
+    <div id="postsplash" style="display: none;">
+        <div class="ui container" align="center">
+        <div class="ui form">
+        <script type="text/javascript" src="nav_bar.js"></script>
+        <button class="basic blue ui button" id="home" style="position: relative;"><i class="home icon"></i></button>
+        <div class="ui basic icon top fixed menu">
+            <a id="toggle" class="item">
+            <i class="sidebar icon"></i>
+            </a>
+        </div>
+        <div class="pusher">
+            <div class="ui container"></div>
+        </div>
+        <script>
+            $('#toggle').click(function(){
+            $('.ui.sidebar').sidebar('toggle');
+            });
+
+        </script>
+     
+         <h1 align="center">POERA</h1>
+  
+         </div>
+        </div>
+    </div>
+</body>
+</html>

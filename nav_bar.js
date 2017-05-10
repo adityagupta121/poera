@@ -1,6 +1,6 @@
 
 var side_bar=document.createElement("div");
-side_bar.setAttribute("class","ui sidebar vertical left inverted menu");
+side_bar.setAttribute("class","ui thin sidebar vertical left inverted menu");
 side_bar.innerHTML=
 		"<a href='#' class='item'>Top Poems</a>" +
         "<a href='#' class='item'>Top Authors</a>" +
@@ -10,6 +10,8 @@ side_bar.innerHTML=
         "<a href='#' class='item'>Write</a>" +
         "<a href='#' class='item'>Developers</a>";
 
-var form =document.getElementsByClassName("ui form");
-form[0].appendChild(side_bar);
+// var form =document.getElementsByClassName("ui form");
+// form[0].appendChild(side_bar);
 //console.log(form[0].innerHTML);
+
+document.body.appendChild(side_bar);
