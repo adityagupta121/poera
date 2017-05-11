@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>POERA</title>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/semantic.min.css">
+	<style type="text/css">
+	#pass {
+				position: relative;
+			top:10px;
+
+		       }     
+	#passr {
+				position: relative;
+			top:10px;
+		       } 
+	#submit {
+			position: relative;
+			top:10px;
+		       }
+	
+	#fb {
+			position: relative;
+			top:20px;
+		       }  
+	#google {
+			position: relative;
+			top:30px;
+		       }  	       
+
+ 
+	#whole
+			{
+				position:relative;
+				top:100px;
+	   		}
+	     	       
+
+		
+	</style>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/semantic.min.js"></script>
+	
+
+</head>
+<body>
+  
+<div id="whole">
+    <div class="ui container" align="center">
+     <div class="ui form">
+     <div class="ui sidebar vertical left inverted menu">
+        <a href="#" class="item">1</a>
+        <a href="#" class="item">2</a>
+        <a href="#" class="item">3</a>
+        <a href="#" class="item">4</a>
+        <a href="#" class="item">5</a>
+        <a href="#" class="item">6</a>
+        <a href="#" class="item">7</a>
+        <a href="#" class="item">8</a>
+     </div>
+     <button class="basic blue ui button" align="right" ><i class="home icon"></i></button>
+     <div class="ui basic icon top fixed menu">
+        <a id="toggle" class="item">
+        <i class="sidebar icon"></i>
+        </a>
+     </div>
+     <div class="pusher">
+        <div class="ui container"></div>
+        </div>
+        <script>
+        $('#toggle').click(function(){
+        $('.ui.sidebar').sidebar('toggle');
+        });
+        </script>
+     
+     	     <h1 align="center">POERA</h1>
+    
+
+      <h2 align="center">Signup</h2>
+    	<div class="inline field">
+    	<label for="UserName">UserName:</label>
+    	<input type="text" name="UserName" placeholder="UserName">
+    	<div class="inline field" id="pass">
+    	<label for="Password">Password:</label>
+    	<input type="Password" name="Password" placeholder="Password">
+    	<div class="inline field" id="passr">
+    	<label for="RePassword">Password: </label>
+    	<input type="Password" name="RePassword" placeholder="Re-enter Password">
+    </div>
+    <div>
+    <button class="ui blue button" id="submit">SUBMIT</button>
+    </div>
+    <div>
+     <button class="ui blue button" id="fb">Signup with fb</button>
+      </div>
+      <div>
+      <button class="ui red button" id="google">Signup with google</button>
+      </div>
+      </div>
+      
+</body>
+</html>
