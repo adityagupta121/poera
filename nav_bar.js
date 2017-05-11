@@ -3,11 +3,11 @@ var side_bar=document.createElement("div");
 side_bar.setAttribute("class","ui thin sidebar vertical left inverted menu");
 side_bar.innerHTML=
 	"<a href='top_poems.html' class='item'>Top Poems</a>" +
-    "<a href='#' class='item'>Top Authors</a>" +
-	"<a href='#' class='item'>Profile</a>" +
+    "<a href='top_authors.html' class='item'>Top Authors</a>" +
+	"<a href='profile.html' class='item'>Profile</a>" +
     "<a href='#' class='item'>My poems</a>" +
     "<a href='#' class='item'>Starred poems</a>" +
-    "<a href='#' class='item'>Write</a>" +
+    "<a href='write.html' class='item'>Write</a>" +
     "<a href='#' class='item'>Developers</a>";
 document.body.appendChild(side_bar);
 
@@ -22,4 +22,5 @@ document.body.appendChild(top_menu);
 
 $('#toggle').click(function(){
 	$('.ui.sidebar').sidebar('toggle');
+	// $('body').attr("class","bg");
 });

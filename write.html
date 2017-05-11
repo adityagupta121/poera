@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>POERA</title>
+	<script language="javascript" src="http://code.jquery.com/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/semantic.min.css">
+	<style type="text/css">
+		#submit {
+			position: relative;
+			top:10px;
+		       }
+		#other {
+			position: relative;
+			top:20px;
+		       }   
+		#whole
+			{
+				position: relative;
+				top: 100px;
+			}      
+	</style>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/semantic.min.js"></script>
+</head>
+<body>
+	
+    <div id="whole">
+        <div class="pusher">
+            <div class="ui container"></div>
+        </div>
+        <script type="text/javascript" src="nav_bar.js"></script>
+        <h1 align="center">POERA</h1>
+        <div align="center">
+            <button class="basic blue ui button"><i class="home icon"></i></button> 
+        </div>
+        <h2 align="center">WRITE</h2>
+        <div class="ui container" align="center">
+            <div class="ui form">
+            	<div class="inline field">
+        	       <label for="Title">TITLE:</label>
+    	           <input type="text" name="title" placeholder="title">
+    	           <div class="inline field" style="position: relative;top: 20px;">
+        	           <label for="Poem">POEM:</label>
+                        <textarea style="width: 200px;"></textarea>
+                    </div>
+                    <div style="position: relative;top: 20px;">
+                        <button class="ui labelled icon button"><i class="music icon"></i> <label>Music</label></button>
+                    </div>
+                    <div style="position: relative;top: 30px;">
+                        <button class="ui labelled icon button"><i class="video icon"></i><label>Video</label></button>
+                    </div>
+                    <div style="position: relative;top: 40px;">
+                        <button class="ui blue button">SUBMIT</button> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
