@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>POERA</title>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/semantic.min.css">
+<style type="text/css">    
+   #whole
+  {
+    position:relative;
+    top:100px;
+  }
+  #edit
+  {
+    position: relative;
+    top: 50px;
+  }
+  #write
+  {
+    position: relative;
+    left: 200px;
+    top: 50px;
+  }
+  #profile
+  {
+    position: relative;
+    top: 30px;
+  }      
+</style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/semantic.min.js"></script>
+</head>
+<body>
+  <div id="whole">
+    <script type="text/javascript" src="nav_bar.js"></script>
+    <div class="ui container" align="center">
+      <div class="ui form">
+        <div class="pusher">
+          <div class="ui container"></div>
+        </div>
+        <h1 align="center">POERA</h1>
+        <button class="basic blue ui button"><i class="home icon"></i></button>
+        <h2 id="profile" align="center">Profile</h2>
+
+        <div>
+          <button class="ui blue button" id="write">Write</button>
+        </div>
+        <img src="read.png" alt=" ">
+        <div class="inline field">
+          <label for="Name">Name:</label>
+          <input type="text" name="Name" placeholder="Name">
+        </div>
+        <div class="inline field">
+          <label for="email">Email:</label>
+          <input type="text" name="email" placeholder="email">
+          <div>
+            <button class="ui blue button" id="edit">EDIT</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>  
+</body>
+</html>
