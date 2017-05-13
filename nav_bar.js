@@ -8,7 +8,7 @@ side_bar.innerHTML=
     "<a href='#' class='item'>My poems</a>" +
     "<a href='#' class='item'>Starred poems</a>" +
     "<a href='write.html' class='item'>Write</a>" +
-    "<a href='#' class='item'>Developers</a>";
+    "<a href='developers.html' class='item'>Developers</a>";
 document.body.appendChild(side_bar);
 
 var top_menu=document.createElement("div");
