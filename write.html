@@ -18,13 +18,18 @@
 				position: relative;
 				top: 100px;
 			}      
+        #mceu_29
+        {
+            display: none; 
+        }
 	</style>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/semantic.min.js"></script>
+    <script src="https://cloud.tinymce.com/stable/tinymce.min.js"></script>
+    <script>tinymce.init({ selector:'textarea' });</script>
 </head>
-<body>
-	
-    <div id="whole">
+<body style="overflow: auto;">
+	<div id="whole">
         <div class="pusher">
             <div class="ui container"></div>
         </div>
@@ -39,20 +44,16 @@
             	<div class="inline field">
         	       <label for="Title">TITLE:</label>
     	           <input type="text" name="title" placeholder="title">
-    	           <div class="inline field" style="position: relative;top: 20px;">
-        	           <label for="Poem">POEM:</label>
-                        <textarea style="width: 200px;"></textarea>
-                    </div>
-                    <div style="position: relative;top: 20px;">
-                        <button class="ui labelled icon button"><i class="music icon"></i> <label>Music</label></button>
-                    </div>
-                    <div style="position: relative;top: 30px;">
-                        <button class="ui labelled icon button"><i class="video icon"></i><label>Video</label></button>
-                    </div>
-                    <div style="position: relative;top: 40px;">
-                        <button class="ui blue button">SUBMIT</button> 
-                    </div>
                 </div>
+    	        <div class="inline field" style="position: relative;top: 20px;">
+        	       <label for="Poem">POEM:</label>
+                    <textarea style="position: relative; height: 200px; width: 500px;"></textarea>
+                </div>
+                <div class="ui buttons" style="position: relative; top: 20px;">
+                    <button class="ui labelled icon button"><i class="music icon"></i> <label>Music</label></button>
+                    <button class="ui labelled icon button"><i class="video icon"></i> <label>Video</label></button>
+                </div>
+                <button class="ui blue button" style="position: relative; top:20px;">SUBMIT</button> 
             </div>
         </div>
     </div>
