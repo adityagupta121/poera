@@ -45,8 +45,9 @@
         $("#menu").hide();
         window.setTimeout(function() {
         $("#splash").remove();
-        $("#postsplash").fadeIn("slow");
-        $("#menu").show();
+        this.document.location.href = "poera1.html";
+        // $("#postsplash").fadeIn("slow");
+        // $("#menu").show();
     
     }, 3000);
 
@@ -55,15 +56,15 @@
     </script>
 
 </head>
-<body onload="timeout()" >
+<body onload="timeout()" id="splash">
 
-    <div class="ui container" id="splash" >
-        <div class="ui text container">
-        <h1 class="ui inverted header" align="center">
+    <!-- <div class="ui container" > -->
+        <!-- <div class="ui text container"> -->
+        <h1 class="ui header" align="center" style="position: center;">
             Welcome to Peora
         </h1>
-        </div>
-    </div>
+        <!-- </div> --> 
+    <!-- </div> -->
 
     <div id="postsplash" style="display: none;">
         <script type="text/javascript" src="nav_bar.js"></script>
