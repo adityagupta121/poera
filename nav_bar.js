@@ -20,7 +20,8 @@ top_menu.innerHTML=
     "</a>";
 document.body.appendChild(top_menu);
 
+		$('.ui.sidebar').sidebar('hide');
+
 $('#toggle').click(function(){
 	$('.ui.sidebar').sidebar('toggle');
-	// $('body').attr("class","bg");
 });

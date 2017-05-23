@@ -25,32 +25,41 @@
     position: relative;
     top: 30px;
   }      
+  #wall
+  {
+     background-image: url("http://alllayedout.com/Backgrounds/Brick_144.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+  }
 </style>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/semantic.min.js"></script>
 </head>
-<body>
+<body >
+<div class="pusher" id="wall">
+  
   <div id="whole">
     <script type="text/javascript" src="nav_bar.js"></script>
     <div class="ui container" align="center">
-      <div class="ui form">
+      <div class="ui form ">
         <div class="pusher">
           <div class="ui container"></div>
         </div>
-        <h1 align="center">POERA</h1>
+        <h1 class="ui red inverted header" align="center">POERA</h1>
         <button class="basic blue ui button"><i class="home icon"></i></button>
-        <h2 id="profile" align="center">Profile</h2>
-
+        <h2 class="ui red inverted header" id="profile" align="center">
+          <img class="ui image" src="read.png" alt=" ">
+          <div class="content">Profile</div>
+        </h2>
         <div>
           <button class="ui blue button" id="write">Write</button>
         </div>
-        <img src="read.png" alt=" ">
-        <div class="inline field">
-          <label for="Name">Name:</label>
+        <div class="inline field ">
+          <label for="Name" class="ui red inverted header">Name:</label>
           <input type="text" name="Name" placeholder="Name">
         </div>
         <div class="inline field">
-          <label for="email">Email:</label>
+          <label for="email" class="ui red inverted header">Email:</label>
           <input type="text" name="email" placeholder="email">
           <div>
             <button class="ui blue button" id="edit">EDIT</button>
@@ -59,5 +68,6 @@
       </div>
     </div>
   </div>  
+</div>
 </body>
 </html>

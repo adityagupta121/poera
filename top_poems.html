@@ -11,7 +11,7 @@
     		position: relative;
     		top: 50px;
     	}
-    	.bg
+    	#bg
     	{
     		background-image: url("http://userscontent2.emaze.com/images/0de803c0-fc2c-4ef3-8a34-4d54816de63b/4b48745a-43b6-468c-8e62-3a52cc99275b.jpg");
     		background-repeat: no-repeat;
@@ -23,10 +23,16 @@
  		}*/
     </style>
 </head>
-<body  class="bg"	>
+<body>
+<div class="pusher" id="bg">
 <script type="text/javascript" src="nav_bar.js"></script>
-<div class="ui container whole pusher">
-	<div class="ui header" align="center">
+<script type="text/javascript">
+    function changeColor(id){
+        $(id).toggleClass("red");
+    }
+</script>
+<div class="ui container whole">
+	<div class="ui inverted header" align="center">
 	POERA
 	</div>
 	<div class="ui items">
@@ -35,19 +41,19 @@
             	<img src="images/wireframe/image.png">
             </div>
             <div class="content">
-                <a class="header">Poem name</a>
+                <a class="ui yellow header">Poem name</a>
                 <div class="meta">
-                    <span>Description</span>
+                    <span class="ui orange sub header">Description</span>
                 </div>
-                <div class="description">
-                        <p>poem first para</p>
+                <div class="poem">
+                        <p class="ui red medium header">poem first para</p>
                 </div>
                 <div class="extra">
-                    Author <br>
-      				<button class="basic red ui button"><i class="heart icon"></i></button> 
-    				<button class="basic red ui button"><i class="smile icon"></i></button>
-    				<button class="basic red ui button"><i class="meh icon"></i></button>
-    				<button class="basic red ui button"><i class="frown icon"></i></button>
+                    <p class="ui grey tiny header">Author </p>
+      				<button class="ui button" onclick="changeColor(this)"><i class="heart icon"></i></button> 
+    				<button class="ui button" onclick="changeColor(this)"><i class="smile icon"></i></button>
+    				<button class="ui button" onclick="changeColor(this)"><i class="meh icon"></i></button>
+    				<button class="ui button" onclick="changeColor(this)"><i class="frown icon"></i></button>
                 </div>
             </div>
         </div>
@@ -56,23 +62,24 @@
                 <img src="images/wireframe/image.png">
             </div>
     		<div class="content">
-                <a class="header">Poem name</a>
-            	<div class="meta">
-                    <span>Description</span>
+                <a class="ui yellow header">Poem name</a>
+                <div class="meta">
+                    <span class="ui orange sub header">Description</span>
                 </div>
-            	<div class="description">
-                	<p>poem first para</p>
+                <div class="poem">
+                        <p class="ui red medium header">poem first para</p>
                 </div>
                 <div class="extra">
-                	Author<br>
-      				<button class="basic red ui button"><i class="heart icon"></i></button> 
-    				<button class="basic red ui button"><i class="smile icon"></i></button>
-    				<button class="basic red ui button"><i class="meh icon"></i></button>
-    				<button class="basic red ui button"><i class="frown icon"></i></button>
+                    <p class="ui grey tiny header">Author </p>
+            		<button class="ui button" onclick="changeColor(this)"><i class="heart icon"></i></button> 
+    				<button class="ui button" onclick="changeColor(this)"><i class="smile icon"></i></button>
+    				<button class="ui button" onclick="changeColor(this)"><i class="meh icon"></i></button>
+    				<button class="ui button" onclick="changeColor(this)"><i class="frown icon"></i></button>
                 </div>
             </div>
         </div>
 	</div>
+</div>
 </div>
 </body>
 </html>
