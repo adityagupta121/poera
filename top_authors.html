@@ -13,7 +13,7 @@
     	}
     	#bg
     	{
-    		background-image: url("p1.jpg");
+    		background-image: url("https://faisalnisar.com/content/images/2016/06/authorbackground02-min.jpg");
     		background-repeat: no-repeat;
     		background-size: 100% 100%;
     	}
@@ -22,6 +22,12 @@
 <body >
 <div class="pusher" id="bg">
 <script type="text/javascript" src="nav_bar.js"></script>
+<script type="text/javascript">
+    function changeColor(id,color){
+        $(id).toggleClass(color);
+    }
+</script>
+
 <div class="ui container whole">
 <div class="ui header" align="center">
 POERA
@@ -41,10 +47,10 @@ POERA
                         </div>
                         <div class="extra">
                         <br>
-	      				<button class="basic red ui button"><i class="heart icon"></i></button> 
-	    				<button class="basic red ui button"><i class="smile icon"></i></button>
-	    				<button class="basic red ui button"><i class="meh icon"></i></button>
-	    				<button class="basic red ui button"><i class="frown icon"></i></button>
+	      	                <button class="ui button" onclick="changeColor(this,'red')"><i class="heart icon"></i></button> 
+                            <button class="ui button" onclick="changeColor(this,'yellow')"><i class="smile icon"></i></button>
+                            <button class="ui button" onclick="changeColor(this,'pink')"><i class="meh icon"></i></button>
+                            <button class="ui button" onclick="changeColor(this,'brown')"><i class="frown icon"></i></button>
                         </div>
                     </div>
                 </div>
@@ -62,10 +68,10 @@ POERA
                         </div>
                         <div class="extra">
                         <br>
-	      				<button class="basic red ui button"><i class="heart icon"></i></button> 
-	    				<button class="basic red ui button"><i class="smile icon"></i></button>
-	    				<button class="basic red ui button"><i class="meh icon"></i></button>
-	    				<button class="basic red ui button"><i class="frown icon"></i></button>
+	      			      	<button class="ui button" onclick="changeColor(this,'red')"><i class="heart icon"></i></button> 
+                            <button class="ui button" onclick="changeColor(this,'yellow')"><i class="smile icon"></i></button>
+                            <button class="ui button" onclick="changeColor(this,'pink')"><i class="meh icon"></i></button>
+                            <button class="ui button" onclick="changeColor(this,'brown')"><i class="frown icon"></i></button>
                         </div>
                     </div>
                 </div>

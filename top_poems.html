@@ -27,8 +27,8 @@
 <div class="pusher" id="bg">
 <script type="text/javascript" src="nav_bar.js"></script>
 <script type="text/javascript">
-    function changeColor(id){
-        $(id).toggleClass("red");
+    function changeColor(id,color){
+        $(id).toggleClass(color);
     }
 </script>
 <div class="ui container whole">
@@ -50,10 +50,10 @@
                 </div>
                 <div class="extra">
                     <p class="ui grey tiny header">Author </p>
-      				<button class="ui button" onclick="changeColor(this)"><i class="heart icon"></i></button> 
-    				<button class="ui button" onclick="changeColor(this)"><i class="smile icon"></i></button>
-    				<button class="ui button" onclick="changeColor(this)"><i class="meh icon"></i></button>
-    				<button class="ui button" onclick="changeColor(this)"><i class="frown icon"></i></button>
+      				<button class="ui button" onclick="changeColor(this,'red')"><i class="heart icon"></i></button> 
+                    <button class="ui button" onclick="changeColor(this,'yellow')"><i class="smile icon"></i></button>
+                    <button class="ui button" onclick="changeColor(this,'pink')"><i class="meh icon"></i></button>
+                    <button class="ui button" onclick="changeColor(this,'brown')"><i class="frown icon"></i></button>
                 </div>
             </div>
         </div>
@@ -71,10 +71,10 @@
                 </div>
                 <div class="extra">
                     <p class="ui grey tiny header">Author </p>
-            		<button class="ui button" onclick="changeColor(this)"><i class="heart icon"></i></button> 
-    				<button class="ui button" onclick="changeColor(this)"><i class="smile icon"></i></button>
-    				<button class="ui button" onclick="changeColor(this)"><i class="meh icon"></i></button>
-    				<button class="ui button" onclick="changeColor(this)"><i class="frown icon"></i></button>
+            		<button class="ui button" onclick="changeColor(this,'red')"><i class="heart icon"></i></button> 
+                    <button class="ui button" onclick="changeColor(this,'yellow')"><i class="smile icon"></i></button>
+                    <button class="ui button" onclick="changeColor(this,'pink')"><i class="meh icon"></i></button>
+                    <button class="ui button" onclick="changeColor(this,'brown')"><i class="frown icon"></i></button>
                 </div>
             </div>
         </div>
