@@ -1,0 +1,114 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Textillate.js</title>
+    <link href="animated.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+        .tlt
+        {
+            color: #fff;
+            font-weight: 200;
+            letter-spacing: 1px;
+            padding: 10px 0 10px 0;
+            display: inline-block;
+            vertical-align: middle;
+            display: block;
+            text-align: center;
+            width: 100%;
+        }
+        .tlt2
+        {
+            color: #FF9999;
+            font-weight: 200;
+            letter-spacing: 1px;
+            padding: 0px 0 10px 0;
+            display: inline-block;
+            vertical-align: middle;
+            display: block;
+            text-align: center; /*visibility: hidden;*/
+            width: 100%;
+        }
+        
+        
+        .highlight
+        {
+            margin: 25px 0px 0px 0px;
+            background-color: #222;
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="highlight">
+        <h1 class="tlt">
+            <ul class="texts" style="display: none">
+                <li>Bootstrap3, HTML5 Templates this is my name</li>
+                <li>open source, and easy to use. </li>
+                <li>Looking for something more?</li>
+            </ul>
+        </h1>
+        <!-- <h2 class="tlt2">
+            <ul class="texts">
+                <li>hey this is my name</li>
+                <li>free to download Bootstrap 3 themes and templates.</li>
+                <li>Subscribe to our mailing list to receive an</li>
+            </ul>
+        </h2> -->
+    </div>
+
+    <br />
+
+   
+    <h1 align="center"><a href="http://www.aspxtemplates.com">aspxtemplates.com</a></h1>
+   
+
+    <script src="jquery.js" type="text/javascript"></script>
+    <script src="jquery.textillate.js" type="text/javascript"></script>
+    <script src="jquery.lettering.js" type="text/javascript"></script>
+    <script src="jquery.fittext.js" type="text/javascript"></script>
+    <script type="text/javascript">
+         $( document ).ready(function() {
+             $('.tlt').textillate({
+              minDisplayTime: 1800, 
+       in: {
+           effect: 'fadeInUp',
+                     delayScale: 5,                     
+                     delay: 200,                     
+                     sync: true,
+                     shuffle: true
+
+       },
+       out: {
+             effect: 'fadeOutUp',             
+             shuffle: true,
+             sync: true
+       },
+       loop: true
+       });
+       
+     });
+    </script>
+    <script type="text/javascript">
+         $( document ).ready(function() {
+             $('.tlt2').textillate({
+              minDisplayTime: 1800, 
+       in: {
+           effect: 'fadeInLeftBig',
+                     delayScale: 2,                                   
+                     delay: 50,
+                     sync: true,
+                     shuffle: true
+
+       },
+       out: {
+             effect: 'fadeOutLeftBig',             
+             shuffle: true,
+             sync: true
+       },
+       loop: true
+       });       
+     });
+    </script>
+</body>
+</html>

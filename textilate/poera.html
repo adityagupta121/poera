@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Poera</title>
+    <link href="animated.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+        .tlt
+        {
+            color: #fff;
+            font-weight: 200;
+            letter-spacing: 1px;
+            padding: 10px 0 10px 0;
+            display: inline-block;
+            vertical-align: middle;
+            display: block;
+            text-align: center;
+            width: 100%;
+        }
+        .highlight
+        {   
+            width: 60%;
+            margin: 25px 0px 0px 0px;
+            background-color: #222;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            background-image: url("https://wallpaperscraft.com/image/dark_spots_texture_background_50355_602x339.jpg");
+        }
+        textarea {
+            box-sizing: border-box;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+            background-color: #f8f8f8;
+            resize: none;
+            width: 40%;
+            height: 200px;
+            padding: 5px;
+        }
+        select {
+            width: 10%;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            background-color: #f1f1f1;
+        }
+    </style>
+</head>
+<body>
+<center>
+
+<div>
+    <textarea id="poem"></textarea>
+</div>
+<div class="buttons">
+    <select class="background">
+        <option value="def">Background Color</option>
+        <option value="blue">Blue</option>
+        <option value="green">Green</option>
+        <option value="red">Red</option>
+    </select>
+
+    <select class="fontColor">
+        <option value="def">Font Color</option>
+        <option value="white">White</option>
+        <option value="black">Black</option>
+        <option value="red">Red</option>
+    </select>
+    <button class="convert">Play</button>
+    <button class="stop">Pause</button>
+    <button class="resume">Resume</button>
+</div>
+<audio src="music.mp3" class="music"></audio>
+
+    <div class="highlight">
+        <h1 class="tlt">
+            <ul class="texts" style="display: none">
+                <!--   -->
+            </ul>
+        </h1>
+    </div>
+</center>
+    <br />
+
+    <script src="jquery.js" type="text/javascript"></script>
+    <script src="jquery.textillate.js" type="text/javascript"></script>
+    <script src="jquery.lettering.js" type="text/javascript"></script>
+    <script src="jquery.fittext.js" type="text/javascript"></script>
+    <script type="text/javascript">
+         $( document ).ready(function() {
+            // var stop = false;
+            $('.convert').click(function() {
+                var x = $('#poem').val();
+                var y = x.split("\n")
+                for(var i=0; i < y.length; i++) {
+                    var m = "<li>" + y[i] + "</li>";
+                    $('.texts').append(m);
+                }
+                switch($('.background').val()) {
+                    case 'def' : console.log('def'); break;
+                    case 'blue' : console.log('blue'); 
+                                $('.highlight').css('background-image', 'url("backgrounds/blue.jpg")');break;
+                    case 'green' : console.log('green');
+                                $('.highlight').css('background-image', 'url("backgrounds/green.jpg")');break;
+                    case 'red' : console.log('red');
+                                $('.highlight').css('background-image', 'url("backgrounds/red.jpg")');break;
+                }
+                switch($('.fontColor').val()) {
+                    case 'def' : console.log('def'); break;
+                    case 'white' : console.log('font : white'); 
+                                $('.tlt').css('color', 'white');break;
+                    case 'black' : console.log('font : green');
+                                $('.tlt').css('color', 'black');break;
+                    case 'red' : console.log('font : red');
+                                $('.tlt').css('color', 'red');break;
+                }
+                console.log('textilate begins now');
+                 $('.tlt').textillate({
+                  minDisplayTime: 1800, 
+                   in: {
+                       effect: 'fadeInUp',
+                                 delayScale: 5,                     
+                                 delay: 200,                     
+                                 sync: true,
+                                 shuffle: true
+
+                   },
+                   out: {
+                         effect: 'fadeOutUp', 
+                         shuffle: true,
+                         sync: true
+                   },
+                   loop: true,
+                   callback: function(){console.log('stopped');$('.music')[0].pause()}
+                   });
+            });
+                 $(".stop").click(function() {
+                    $('.tlt').textillate('stop');
+                    console.log('stopped manually')
+                 });
+                 $(".resume").click(function() {
+                    $('.tlt').textillate('start');
+                    console.log('resumed manually')
+                 });
+
+                 $('.tlt').on('inAnimationBegin.tlt', function () {
+                     $('.music')[0].play();
+                 });
+
+        });
+    </script>
+</body>
+</html>
